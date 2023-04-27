@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/finance-ledger/static/css/main.e6c13ad2.css",
+    "main.js": "/finance-ledger/static/js/main.d7e06e9e.js",
+    "static/js/787.44c7e478.chunk.js": "/finance-ledger/static/js/787.44c7e478.chunk.js",
+    "index.html": "/finance-ledger/index.html",
+    "main.e6c13ad2.css.map": "/finance-ledger/static/css/main.e6c13ad2.css.map",
+    "main.d7e06e9e.js.map": "/finance-ledger/static/js/main.d7e06e9e.js.map",
+    "787.44c7e478.chunk.js.map": "/finance-ledger/static/js/787.44c7e478.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d7e06e9e.js"
+  ]
+}
