@@ -9,7 +9,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "svgr-dev": " npx @svgr/cli src/icons --out-dir src/components/iconComponents --icon --typescript"
+    "svg-dev": " npx @svgr/cli src/icons --out-dir src/components/iconComponents --icon --typescript"
   },
   "eslintConfig": {
     "extends": [
