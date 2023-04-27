@@ -1,4 +1,5 @@
 import cn from "classnames";
+import { NavLink } from "react-router-dom";
 import { NavigationProps } from "./Navigation.props";
 import styles from "./Navigation.module.css";
 import { navItems } from "../../../helpers/navItems";
@@ -12,7 +13,7 @@ export const Navigation = ({
       <ul className={styles.navList}>
         {navItems.map(i => (
           <li key={i.id} className={styles.navItem}>
-            <a href="#">{i.name}</a>
+            <NavLink to={i.route}>{i.name}</NavLink>
           </li>
         ))}
       </ul>
