@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: left;
+  align-content: center;
+  gap: 16px;
+  padding: 22px 22px 0px 22px;
+}
+
+.headerLogo {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr;
+  gap: 8px;
+  font-size: 28px;
+  line-height: 38px;
+  transition: transform 750ms;
+  will-change: transform;
+}
+
+.headerLogo:hover,
+.headerLogo:focus {
+  transform: scale(1.05);
+}
+
+.headerLogo span {
+  color: var(--green);
+}

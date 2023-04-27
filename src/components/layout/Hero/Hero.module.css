@@ -1,0 +1,33 @@
+.heroSection {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  padding: 200px 0;
+  background-image: var(--linear-grad), url(./images/showcase.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .heroSection {
+    background-image: var(--linear-grad), url(./images/showcase@2x.webp);
+  }
+}
+
+.heroSection h1 {
+  padding: 0px 40px;
+}
+
+.heroSection h3 {
+  margin: 16px 0px 24px 0px;
+  text-align: center;
+}
