@@ -1,12 +1,23 @@
-import { Menu } from "./layout/Menu";
-import { Hero } from "./layout/Hero";
+import { Route, Routes } from "react-router-dom";
+import { lazy } from "react";
+import { HTag } from "./common/HTag";
+
+const Home = lazy(() => import("./pages/Home/Home"));
 
 function App(): JSX.Element {
   return (
-    <div className="App">
-      <Menu />
-      <Hero />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          <Route
+            path="*"
+            element={
+              <HTag tag="h1">Page not found or still in development</HTag>
+            }
+          />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
