@@ -1,0 +1,13 @@
+.s {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.m {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.black {
+  color: var(--black);
+}

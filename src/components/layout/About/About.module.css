@@ -1,0 +1,33 @@
+.aboutSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--green);
+}
+
+.aboutBg {
+  padding: 110px 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/people.webp);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .aboutBg {
+    background-image: url(./images/people@2x.webp);
+  }
+}
+
+.aboutDesc {
+  padding: 79px 20px;
+}
+
+.aboutDesc h2 {
+  margin-top: 16px;
+}
+
+.text {
+  margin: 24px 0;
+}

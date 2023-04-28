@@ -7,5 +7,5 @@ export interface ButtonProps
   > {
   children: ReactNode;
   appearence: "primary" | "green" | "blue";
-  arrow: "rigth" | "none";
+  arrow?: "rigth" | "none";
 }
