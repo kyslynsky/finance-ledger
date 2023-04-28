@@ -1,0 +1,26 @@
+.cases {
+  padding: 56px 20px 40px;
+}
+
+.description {
+  text-align: center;
+  color: var(--black);
+}
+
+.description h2 {
+  margin: 16px 0 24px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.picture {
+  width: 280px;
+  align-self: center;
+  cursor: pointer;
+}
