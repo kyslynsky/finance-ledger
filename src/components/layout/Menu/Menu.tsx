@@ -5,6 +5,7 @@ import styles from "./Menu.module.css";
 import Logo from "../../iconComponents/Logo";
 import { Navigation } from "../../common/Navigation";
 import { useState, useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 export const Menu = ({ className, ...props }: MenuProps): JSX.Element => {
   const [matches, setMatches] = useState<boolean>(
@@ -30,6 +31,10 @@ export const Menu = ({ className, ...props }: MenuProps): JSX.Element => {
     }
   }, [matches]);
 
+  const scrollTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <header
       className={cn(className, styles.header, {
@@ -37,7 +42,13 @@ export const Menu = ({ className, ...props }: MenuProps): JSX.Element => {
       })}
       {...props}
     >
-      <NavLink to="/" className={styles.headerLogo}>
+      <NavLink
+        to={"/"}
+        onClick={() => {
+          scrollTop();
+        }}
+        className={styles.headerLogo}
+      >
         <Logo width={40} height={35} />
         <span>Finance</span>Ledger
       </NavLink>

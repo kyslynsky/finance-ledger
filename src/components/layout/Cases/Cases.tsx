@@ -24,7 +24,7 @@ export const Cases = (): JSX.Element => {
     setCurrentIndex(currentImageIndex + 1);
 
   return (
-    <Section className={styles.cases}>
+    <Section className={styles.cases} id="cases">
       <div className={styles.description}>
         <PTag size="s">This is what we do</PTag>
         <HTag tag="h2">Business Cases</HTag>
