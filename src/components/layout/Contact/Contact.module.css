@@ -1,0 +1,29 @@
+.contactSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgb(176, 170, 170);
+}
+
+.contactBg {
+  padding: 110px 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/contact.webp);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .aboutBg {
+    background-image: url(./images/contact@2x.webp);
+  }
+}
+
+.wrapper {
+  padding: 51px 20px 25px;
+}
+
+.wrapper h2 {
+  color: var(--black);
+}
