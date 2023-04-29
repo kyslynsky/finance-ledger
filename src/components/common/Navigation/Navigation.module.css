@@ -9,6 +9,7 @@
   border-bottom: 1px solid transparent;
   transition: border 0.1s;
   will-change: border-bottom;
+  cursor: pointer;
 }
 
 .navItem:hover,

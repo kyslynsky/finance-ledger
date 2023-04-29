@@ -6,7 +6,7 @@ import { PTag } from "../../common/PTag";
 
 export const About = (): JSX.Element => {
   return (
-    <Section className={styles.aboutSection}>
+    <Section className={styles.aboutSection} id="about">
       <div className={styles.aboutBg}></div>
       <div className={styles.aboutDesc}>
         <PTag size="s">What you are looking for</PTag>
