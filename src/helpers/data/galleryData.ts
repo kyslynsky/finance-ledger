@@ -37,7 +37,7 @@ export interface IPicture {
   srcjpg: string;
   srcjpg2x: string;
   alt: string;
-  description: string;
+  description?: string;
 }
 
 export const images: IPicture[] = [
@@ -103,6 +103,6 @@ export const images: IPicture[] = [
     srcwebp: eighthWebp,
     src: eighthWebp2,
     alt: "Lorem ipsum dolor sit",
-    description: "Lorem ipsum dolor sit",
+    description: "Ipsum dolor",
   },
 ];

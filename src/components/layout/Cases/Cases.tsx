@@ -3,7 +3,7 @@ import { Section } from "../../common/Section";
 import { HTag } from "../../common/HTag";
 import { PTag } from "../../common/PTag";
 import { picturesFactory } from "../../../helpers/picturesFactory";
-import { images } from "../../../helpers/gallery/galleryData";
+import { images } from "../../../helpers/data/galleryData";
 import { useState } from "react";
 import Lightbox from "react-spring-lightbox";
 import SvgNext from "../../iconComponents/Next";

@@ -1,0 +1,65 @@
+.team {
+  padding: 72px 20px 50px;
+  background-color: tomato;
+}
+
+.description {
+  text-align: center;
+  color: var(--black);
+}
+
+.description h2 {
+  margin: 16px 0 24px;
+}
+
+.teamGallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.item {
+  text-align: center;
+}
+
+.teamSocials {
+  position: relative;
+  top: -35%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.teamSocials li {
+  padding: 5px;
+}
+
+.socialIco {
+  width: 20px;
+  height: 20px;
+}
+
+.fullname {
+  margin: 16px 0 8px;
+}
+
+.itemImg {
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.itemImg:hover,
+.itemImg:focus {
+  filter: brightness(60%) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+  transform: scale(1.05);
+}
+
+.socialIco:hover,
+.socialIco:focus {
+  opacity: 0.8;
+}

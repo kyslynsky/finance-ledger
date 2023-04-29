@@ -3,6 +3,7 @@ import { Menu } from "../../layout/Menu";
 import { About } from "../../layout/About";
 import { Cases } from "../../layout/Cases";
 import { Blog } from "../../layout/Blog";
+import { Team } from "../../layout/Team";
 
 const Home = (): JSX.Element => {
   return (
@@ -13,6 +14,7 @@ const Home = (): JSX.Element => {
         <About />
         <Cases />
         <Blog />
+        <Team />
       </main>
     </>
   );
