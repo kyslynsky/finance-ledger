@@ -1,4 +1,4 @@
-import { IPicture } from "./../../../helpers/gallery/galleryData";
+import { IPicture } from "../../../helpers/data/galleryData";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export interface IImageDescription

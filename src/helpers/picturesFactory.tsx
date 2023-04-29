@@ -1,4 +1,4 @@
-import { IPicture } from "./gallery/galleryData";
+import { IPicture } from "./data/galleryData";
 
 export const picturesFactory = (images: IPicture[]): JSX.Element[] => {
   return images.map(i => (
