@@ -32,75 +32,75 @@ import eighthWebp from "./photos/cases8.webp";
 import eighthWebp2 from "./photos/cases8@2x.webp";
 
 export interface IPicture {
-  srcWebp: string;
+  srcwebp: string;
   src: string;
-  srcJpg: string;
-  srcJpg2x: string;
+  srcjpg: string;
+  srcjpg2x: string;
   alt: string;
   description: string;
 }
 
 export const images: IPicture[] = [
   {
-    srcJpg: firstJpg,
-    srcJpg2x: firstJpg2,
-    srcWebp: firstWebp,
+    srcjpg: firstJpg,
+    srcjpg2x: firstJpg2,
+    srcwebp: firstWebp,
     src: firstWebp2,
     alt: "Lorem ipsum dolor sit",
     description: "Lorem ipsum",
   },
   {
-    srcJpg: secondJpg,
-    srcJpg2x: secondJpg2,
-    srcWebp: secondWebp,
+    srcjpg: secondJpg,
+    srcjpg2x: secondJpg2,
+    srcwebp: secondWebp,
     src: secondWebp2,
     alt: "Lorem ipsum dolor sit",
     description: "Dolor sit",
   },
   {
-    srcJpg: thirdJpg,
-    srcJpg2x: thirdJpg2,
-    srcWebp: thirdWebp,
+    srcjpg: thirdJpg,
+    srcjpg2x: thirdJpg2,
+    srcwebp: thirdWebp,
     src: thirdWebp2,
     alt: "Lorem ipsum dolor sit",
     description: "Lorem ipsum dolor sit",
   },
   {
-    srcJpg: fourthJpg,
-    srcJpg2x: fourthJpg2,
-    srcWebp: fourthWebp,
+    srcjpg: fourthJpg,
+    srcjpg2x: fourthJpg2,
+    srcwebp: fourthWebp,
     src: fourthWebp2,
     alt: "Lorem ipsum dolor sit",
     description: "Lorem ipsum dolor sit",
   },
   {
-    srcJpg: fifthJpg,
-    srcJpg2x: fifthJpg2,
-    srcWebp: fifthWebp,
+    srcjpg: fifthJpg,
+    srcjpg2x: fifthJpg2,
+    srcwebp: fifthWebp,
     src: fifthWebp2,
     alt: "Lorem ipsum dolor sit",
     description: "Lorem ipsum dolor sit",
   },
   {
-    srcJpg: sixthJpg,
-    srcJpg2x: sixthJpg2,
-    srcWebp: sixthWebp,
+    srcjpg: sixthJpg,
+    srcjpg2x: sixthJpg2,
+    srcwebp: sixthWebp,
     src: sixthWebp2,
     alt: "Lorem ipsum dolor sit",
     description: "Lorem ipsum dolor sit",
   },
   {
-    srcJpg: seventhJpg,
-    srcJpg2x: seventhJpg2,
-    srcWebp: seventhWebp,
+    srcjpg: seventhJpg,
+    srcjpg2x: seventhJpg2,
+    srcwebp: seventhWebp,
     src: seventhWebp2,
     alt: "Lorem ipsum dolor sit",
     description: "Lorem ipsum dolor sit",
   },
   {
-    srcJpg: eighthJpg,
-    srcJpg2x: eighthJpg2,
-    srcWebp: eighthWebp,
+    srcjpg: eighthJpg,
+    srcjpg2x: eighthJpg2,
+    srcwebp: eighthWebp,
     src: eighthWebp2,
     alt: "Lorem ipsum dolor sit",
     description: "Lorem ipsum dolor sit",

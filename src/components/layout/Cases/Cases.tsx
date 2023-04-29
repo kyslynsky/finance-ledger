@@ -6,9 +6,10 @@ import { picturesFactory } from "../../../helpers/picturesFactory";
 import { images } from "../../../helpers/gallery/galleryData";
 import { useState } from "react";
 import Lightbox from "react-spring-lightbox";
-import SvgClose from "../../iconComponents/Close";
 import SvgNext from "../../iconComponents/Next";
 import SvgPrev from "../../iconComponents/Prev";
+import { ImageDescription } from "../../common/ImageDescription";
+import { ModalNav } from "../../common/ModalNav";
 
 export const Cases = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -53,7 +54,9 @@ export const Cases = (): JSX.Element => {
         ))}
       </ul>
 
+      {isOpen && <div className={styles.overlay}></div>}
       <Lightbox
+        className={styles.imgModal}
         isOpen={isOpen}
         onPrev={gotoPrevious}
         onNext={gotoNext}
@@ -61,58 +64,29 @@ export const Cases = (): JSX.Element => {
         currentIndex={currentImageIndex}
         onClose={() => setIsOpen(false)}
         renderImageOverlay={() => (
-          <div>
-            <PTag color="black">{images[currentImageIndex].description}</PTag>
-            <PTag color="black">
-              Image {currentImageIndex + 1} of&nbsp;
-              {images.length}
-            </PTag>
-            <SvgClose
-              style={{ zIndex: 1 }}
-              onClick={() => setIsOpen(false)}
-              width={65}
-              height={65}
-              stroke="#000"
-            />
-          </div>
+          <ImageDescription
+            images={images}
+            index={currentImageIndex}
+            setIsOpen={setIsOpen}
+          />
         )}
         renderPrevButton={() => (
-          <SvgPrev
-            style={{ zIndex: 1 }}
-            onClick={gotoPrevious}
-            width={80}
-            height={80}
-            stroke="#000"
-          />
+          <ModalNav onClick={gotoPrevious} isDisabled={currentImageIndex <= 0}>
+            <SvgPrev width={80} height={80} />
+          </ModalNav>
         )}
         renderNextButton={() => (
-          <SvgNext
-            style={{ zIndex: 1 }}
+          <ModalNav
             onClick={gotoNext}
-            width={80}
-            height={80}
-            stroke="#000"
-          />
+            isDisabled={currentImageIndex + 1 === images.length}
+          >
+            <SvgNext width={80} height={80} />
+          </ModalNav>
         )}
-        renderFooter={() => <div>Overlay</div>}
       />
     </Section>
   );
 };
-
-/* Add your own UI */
-// renderHeader={() => (<CustomHeader />)}
-// renderFooter={() => (<CustomFooter />)}
-// renderPrevButton={() => (<CustomLeftArrowButton />)}
-// renderNextButton={() => (<CustomRightArrowButton />)}
-//renderImageOverlay={() => (<ImageOverlayComponent >)}
-
-/* Add styling */
-// className="cool-class"
-// style={{ background: "grey" }}
-
-/* Use single or double click to zoom */
-// singleClickToZoom
 
 /* react-spring config for open/close animation */
 // pageTransitionConfig={{

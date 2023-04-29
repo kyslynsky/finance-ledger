@@ -1,0 +1,25 @@
+.button {
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+  will-change: opacity;
+  transition: opacity 0.5s;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 1;
+}
+
+.disabled {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    display: none;
+  }
+}

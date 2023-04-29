@@ -2,11 +2,11 @@ import { IPicture } from "./gallery/galleryData";
 
 export const picturesFactory = (images: IPicture[]): JSX.Element[] => {
   return images.map(i => (
-    <picture key={i.srcJpg}>
-      <source srcSet={(i.srcWebp.concat(" 1x"), i.src.concat(" 2x"))} />
-      <source srcSet={(i.srcJpg.concat(" 1x"), i.srcJpg2x.concat(" 2x"))} />
+    <picture key={i.srcjpg}>
+      <source srcSet={(i.srcwebp.concat(" 1x"), i.src.concat(" 2x"))} />
+      <source srcSet={(i.srcjpg.concat(" 1x"), i.srcjpg2x.concat(" 2x"))} />
 
-      <img src={i.srcJpg} alt={i.alt} />
+      <img src={i.srcjpg} alt={i.alt} />
     </picture>
   ));
 };
