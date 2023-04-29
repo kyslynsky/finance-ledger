@@ -44,10 +44,10 @@ export const teamData: IPerson[] = [
     ],
     socials: [
       {
-        facebook: "facebook.com",
-        twitter: "twitter.com",
-        youtube: "youtube.com",
-        linkedin: "linkedin.com",
+        facebook: "https://facebook.com",
+        twitter: "https://twitter.com",
+        youtube: "https://youtube.com",
+        linkedin: "https://linkedin.com",
       },
     ],
   },
@@ -66,10 +66,10 @@ export const teamData: IPerson[] = [
     ],
     socials: [
       {
-        facebook: "facebook.com",
-        twitter: "twitter.com",
-        youtube: "youtube.com",
-        linkedin: "linkedin.com",
+        facebook: "https://facebook.com",
+        twitter: "https://twitter.com",
+        youtube: "https://youtube.com",
+        linkedin: "https://linkedin.com",
       },
     ],
   },
@@ -88,10 +88,10 @@ export const teamData: IPerson[] = [
     ],
     socials: [
       {
-        facebook: "facebook.com",
-        twitter: "twitter.com",
-        youtube: "youtube.com",
-        linkedin: "linkedin.com",
+        facebook: "https://facebook.com",
+        twitter: "https://twitter.com",
+        youtube: "https://youtube.com",
+        linkedin: "https://linkedin.com",
       },
     ],
   },
