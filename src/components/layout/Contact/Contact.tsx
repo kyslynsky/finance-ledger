@@ -12,6 +12,12 @@ interface IFormData {
   email: string;
 }
 
+const encode = (data: { [x: string]: string | number | boolean }) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 export const Contact = (): JSX.Element => {
   const {
     register,
@@ -19,7 +25,15 @@ export const Contact = (): JSX.Element => {
     formState: { errors },
   } = useForm<IFormData>();
 
-  const onSubmit = (data: IFormData) => console.log(data);
+  const onSubmit = (data: IFormData) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...data }),
+    })
+      .then(() => console.log(data))
+      .catch(error => alert(error));
+  };
 
   return (
     <Section className={styles.contactSection} id="about">
