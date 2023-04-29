@@ -1,11 +1,10 @@
 import cn from "classnames";
-import { NavLink } from "react-router-dom";
 import { MenuProps } from "./Menu.props";
 import styles from "./Menu.module.css";
 import Logo from "../../iconComponents/Logo";
 import { Navigation } from "../../common/Navigation";
 import { useState, useEffect } from "react";
-import { animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Menu = ({ className, ...props }: MenuProps): JSX.Element => {
   const [matches, setMatches] = useState<boolean>(
@@ -42,7 +41,7 @@ export const Menu = ({ className, ...props }: MenuProps): JSX.Element => {
       })}
       {...props}
     >
-      <NavLink
+      <Link
         to={"/"}
         onClick={() => {
           scrollTop();
@@ -51,7 +50,7 @@ export const Menu = ({ className, ...props }: MenuProps): JSX.Element => {
       >
         <Logo width={40} height={35} />
         <span>Finance</span>Ledger
-      </NavLink>
+      </Link>
       <Navigation />
     </header>
   );
