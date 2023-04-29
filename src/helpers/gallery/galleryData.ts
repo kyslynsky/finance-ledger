@@ -33,10 +33,11 @@ import eighthWebp2 from "./photos/cases8@2x.webp";
 
 export interface IPicture {
   srcWebp: string;
-  srcWebp2x: string;
+  src: string;
   srcJpg: string;
   srcJpg2x: string;
   alt: string;
+  description: string;
 }
 
 export const images: IPicture[] = [
@@ -44,56 +45,64 @@ export const images: IPicture[] = [
     srcJpg: firstJpg,
     srcJpg2x: firstJpg2,
     srcWebp: firstWebp,
-    srcWebp2x: firstWebp2,
+    src: firstWebp2,
     alt: "Lorem ipsum dolor sit",
+    description: "Lorem ipsum",
   },
   {
     srcJpg: secondJpg,
     srcJpg2x: secondJpg2,
     srcWebp: secondWebp,
-    srcWebp2x: secondWebp2,
+    src: secondWebp2,
     alt: "Lorem ipsum dolor sit",
+    description: "Dolor sit",
   },
   {
     srcJpg: thirdJpg,
     srcJpg2x: thirdJpg2,
     srcWebp: thirdWebp,
-    srcWebp2x: thirdWebp2,
+    src: thirdWebp2,
     alt: "Lorem ipsum dolor sit",
+    description: "Lorem ipsum dolor sit",
   },
   {
     srcJpg: fourthJpg,
     srcJpg2x: fourthJpg2,
     srcWebp: fourthWebp,
-    srcWebp2x: fourthWebp2,
+    src: fourthWebp2,
     alt: "Lorem ipsum dolor sit",
+    description: "Lorem ipsum dolor sit",
   },
   {
     srcJpg: fifthJpg,
     srcJpg2x: fifthJpg2,
     srcWebp: fifthWebp,
-    srcWebp2x: fifthWebp2,
+    src: fifthWebp2,
     alt: "Lorem ipsum dolor sit",
+    description: "Lorem ipsum dolor sit",
   },
   {
     srcJpg: sixthJpg,
     srcJpg2x: sixthJpg2,
     srcWebp: sixthWebp,
-    srcWebp2x: sixthWebp2,
+    src: sixthWebp2,
     alt: "Lorem ipsum dolor sit",
+    description: "Lorem ipsum dolor sit",
   },
   {
     srcJpg: seventhJpg,
     srcJpg2x: seventhJpg2,
     srcWebp: seventhWebp,
-    srcWebp2x: seventhWebp2,
+    src: seventhWebp2,
     alt: "Lorem ipsum dolor sit",
+    description: "Lorem ipsum dolor sit",
   },
   {
     srcJpg: eighthJpg,
     srcJpg2x: eighthJpg2,
     srcWebp: eighthWebp,
-    srcWebp2x: eighthWebp2,
+    src: eighthWebp2,
     alt: "Lorem ipsum dolor sit",
+    description: "Lorem ipsum dolor sit",
   },
 ];
