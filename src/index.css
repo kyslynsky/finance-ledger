@@ -14,6 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -38,10 +39,15 @@ a {
 
 img {
   display: block;
+  width: 100%;
 }
 
 button,
 input,
 textarea {
   font-family: inherit;
+}
+
+button {
+  cursor: pointer;
 }

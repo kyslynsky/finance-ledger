@@ -1,6 +1,7 @@
 import { Hero } from "../../layout/Hero";
 import { Menu } from "../../layout/Menu";
 import { About } from "../../layout/About";
+import { Cases } from "../../layout/Cases";
 
 const Home = (): JSX.Element => {
   return (
@@ -9,6 +10,7 @@ const Home = (): JSX.Element => {
       <Hero />
       <main>
         <About />
+        <Cases />
       </main>
     </>
   );

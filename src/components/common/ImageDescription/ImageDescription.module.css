@@ -1,0 +1,39 @@
+.block {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caption {
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.caption span {
+  opacity: 0.6;
+  font-size: 11px;
+}
+
+.closeBtn {
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+  will-change: opacity;
+  transition: opacity 0.5s;
+}
+
+.closeIco {
+  width: 20px;
+  height: 20px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  opacity: 1;
+}
