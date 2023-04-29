@@ -1,0 +1,33 @@
+.blogSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--blue);
+}
+
+.blogBg {
+  padding: 125px 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/blog.webp);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .blogBg {
+    background-image: url(./images/blog@2x.webp);
+  }
+}
+
+.blogDesc {
+  padding: 48px 20px 58px;
+}
+
+.blogDesc h2 {
+  margin-top: 16px;
+}
+
+.text {
+  margin: 24px 0;
+}
