@@ -8,10 +8,8 @@ import SvgFb from "../../iconComponents/Fb";
 import SvgTw from "../../iconComponents/Tw";
 import SvgYt from "../../iconComponents/Yt";
 import SvgIn from "../../iconComponents/In";
-import { useState } from "react";
 
 export const Team = (): JSX.Element => {
-  const [mouseOver, setMouseOver] = useState(false);
 
   return (
     <Section className={styles.team}>
