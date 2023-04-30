@@ -53,13 +53,13 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .gGBwSS {
+  .lightbox-image-pager > div {
     width: 80% !important;
   }
 }
 
 @media screen and (min-width: 1360px) {
-  .gGBwSS {
+  .lightbox-image-pager > div {
     width: 60% !important;
   }
 }
