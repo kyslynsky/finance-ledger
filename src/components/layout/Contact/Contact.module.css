@@ -1,7 +1,7 @@
 .contactSection {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: rgb(176, 170, 170);
+  background-color: var(--light-grey);
 }
 
 .contactBg {
@@ -26,4 +26,8 @@
 
 .wrapper h2 {
   color: var(--black);
+}
+
+.contactForm {
+  margin-top: 69px;
 }

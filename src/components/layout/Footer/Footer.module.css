@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  background-color: var(--black);
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.socials {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.socialLink:hover .socialIcon,
+.socialLink:focus .socialIcon {
+  fill: var(--green);
+  transition: all 0.3s;
+}

@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input {
+  padding: 16px 8px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 16px;
+  width: 100%;
+  outline-color: var(--green);
+}
+
+.errorMsg {
+  display: flex;
+  align-items: flex-end;
+}
+
+.submitBtn {
+  margin-top: 24px;
+}
+
+.errors {
+  outline-color: var(--red);
+}
