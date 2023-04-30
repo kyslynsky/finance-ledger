@@ -36,7 +36,7 @@ export const Contact = (): JSX.Element => {
   };
 
   return (
-    <Section className={styles.contactSection} id="about">
+    <Section className={styles.contactSection} id="contact">
       <div className={styles.contactBg}></div>
       <div className={styles.wrapper}>
         <HTag tag="h2">Request Callback</HTag>

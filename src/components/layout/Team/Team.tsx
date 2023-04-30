@@ -23,32 +23,47 @@ export const Team = (): JSX.Element => {
       <ul className={styles.teamGallery}>
         {teamData.map(item => (
           <li key={item.id} tabIndex={0} className={styles.item}>
-            <div className={styles.itemImg}>{picturesFactory(item.images)}</div>
+            <div className={styles.itemImg}>
+              {picturesFactory(item.images)}
 
-            {item.socials.map((s, i) => (
-              <ul className={styles.teamSocials} key={i}>
-                <li>
-                  <a href={s.facebook} target="blank">
-                    <SvgFb className={styles.socialIco} />
-                  </a>
-                </li>
-                <li>
-                  <a href={s.twitter} target="blank">
-                    <SvgTw className={styles.socialIco} />
-                  </a>
-                </li>
-                <li>
-                  <a href={s.youtube} target="blank">
-                    <SvgYt className={styles.socialIco} />
-                  </a>
-                </li>
-                <li>
-                  <a href={s.linkedin} target="blank">
-                    <SvgIn className={styles.socialIco} />
-                  </a>
-                </li>
-              </ul>
-            ))}
+              <div className={styles.itemHover}>
+                {item.socials.map((s, i) => (
+                  <div className={styles.socialIcons} key={i}>
+                    <a
+                      href={s.facebook}
+                      target="blank"
+                      className={styles.socialLink}
+                    >
+                      <SvgFb className={styles.socialIco} />
+                    </a>
+
+                    <a
+                      href={s.twitter}
+                      target="blank"
+                      className={styles.socialLink}
+                    >
+                      <SvgTw className={styles.socialIco} />
+                    </a>
+
+                    <a
+                      href={s.youtube}
+                      target="blank"
+                      className={styles.socialLink}
+                    >
+                      <SvgYt className={styles.socialIco} />
+                    </a>
+
+                    <a
+                      href={s.linkedin}
+                      target="blank"
+                      className={styles.socialLink}
+                    >
+                      <SvgIn className={styles.socialIco} />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
 
             <PTag size="m" color="black" className={styles.fullname}>
               {item.fullname}

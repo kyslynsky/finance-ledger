@@ -1,6 +1,5 @@
 .team {
   padding: 72px 20px 50px;
-  background-color: tomato;
 }
 
 .description {
@@ -15,51 +14,77 @@
 .teamGallery {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
-  gap: 30px;
+  grid-gap: 30px;
+  text-align: center;
   margin-top: 60px;
 }
 
-.item {
-  text-align: center;
-}
-
-.teamSocials {
+.itemImg {
   position: relative;
-  top: -35%;
+  overflow: hidden;
+}
+
+.itemImg img {
+  display: block;
   width: 100%;
+  height: auto;
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.itemHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 15px;
+  justify-content: center;
 }
 
-.teamSocials li {
-  padding: 5px;
+.itemHover:hover {
+  opacity: 0.8;
 }
 
-.socialIco {
-  width: 20px;
-  height: 20px;
+.itemHover .socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemHover .socialLink {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.itemHover .socialLink:hover {
+  opacity: 0.8;
+}
+
+.itemHover:hover + .itemImg img {
+  filter: brightness(60%);
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+.itemImg {
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .fullname {
   margin: 16px 0 8px;
 }
 
-.itemImg {
-  cursor: pointer;
-  transition: all 0.5s;
-  z-index: 1;
-}
-
 .itemImg:hover,
 .itemImg:focus {
-  filter: brightness(60%) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
   transform: scale(1.05);
-}
-
-.socialIco:hover,
-.socialIco:focus {
-  opacity: 0.8;
+  z-index: 2;
 }
