@@ -51,7 +51,7 @@ export const Menu = ({ className, ...props }: MenuProps): JSX.Element => {
         <Logo width={40} height={35} />
         <span>Finance</span>Ledger
       </Link>
-      <Navigation />
+      <Navigation matches={matches} />
     </header>
   );
 };

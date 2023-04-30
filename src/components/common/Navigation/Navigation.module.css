@@ -16,3 +16,20 @@
 .navItem:focus {
   border-bottom: 1px solid var(--light-green);
 }
+
+@media screen and (min-width: 768px) {
+  .navList {
+    gap: 20px;
+  }
+
+  .navItem {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .navList {
+    gap: 40px;
+  }
+}

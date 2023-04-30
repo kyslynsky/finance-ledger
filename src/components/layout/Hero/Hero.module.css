@@ -24,6 +24,22 @@
 }
 
 .heroSection h3 {
-  margin: 16px 0px 24px 0px;
+  margin: 16px 0px 24px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heroSection {
+    padding: 400px 0;
+  }
+
+  .heroSection h3 {
+    padding: 0 150px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .heroSection {
+    padding: 275px 0;
+  }
 }

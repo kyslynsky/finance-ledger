@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 20px 30px;
+  padding: 20px 20px;
   background-color: var(--black);
   align-items: center;
   gap: 12px;
@@ -14,6 +14,12 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.socialLink {
+  width: 35px;
+  height: 35px;
+  padding: 2px;
 }
 
 .socialLink:hover .socialIcon,

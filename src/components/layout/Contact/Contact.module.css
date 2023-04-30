@@ -31,3 +31,19 @@
 .contactForm {
   margin-top: 69px;
 }
+
+@media screen and (min-width: 768px) {
+  .contactSection {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wrapper {
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .wrapper {
+    padding: 56px 28px 77px 20px;
+  }
+}

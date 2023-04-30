@@ -20,9 +20,15 @@
 }
 
 .picture {
-  width: 280px;
   align-self: center;
   cursor: pointer;
+  will-change: opacity;
+  transition: opacity, 0.3s;
+}
+
+.picture:hover,
+.picture:focus {
+  opacity: 0.8;
 }
 
 .overlay {
@@ -38,4 +44,21 @@
 
 .imgModal img {
   padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .cases {
+    padding: 48px 32px 40px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .cases {
+    padding: 80px 28px 80px;
+  }
 }
