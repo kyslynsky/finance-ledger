@@ -28,7 +28,7 @@ export const Team = (): JSX.Element => {
 
               <div className={styles.itemHover} tabIndex={0}>
                 {item.socials.map((s, i) => (
-                  <div className={styles.socialIcons} key={i}>
+                  <div className={styles.socialIcons} key={i} tabIndex={-1}>
                     <a
                       tabIndex={0}
                       href={s.facebook}

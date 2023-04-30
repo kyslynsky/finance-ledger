@@ -13,7 +13,6 @@ import { ModalNav } from "../../common/ModalNav";
 
 export const Cases = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-
   const [currentImageIndex, setCurrentIndex] = useState(0);
 
   const gotoPrevious = () =>
