@@ -23,42 +23,46 @@ export const Team = (): JSX.Element => {
       <ul className={styles.teamGallery}>
         {teamData.map(item => (
           <li key={item.id} tabIndex={0} className={styles.item}>
-            <div className={styles.itemImg}>
+            <div className={styles.itemImg} tabIndex={0}>
               {picturesFactory(item.images)}
 
-              <div className={styles.itemHover}>
+              <div className={styles.itemHover} tabIndex={0}>
                 {item.socials.map((s, i) => (
                   <div className={styles.socialIcons} key={i}>
                     <a
+                      tabIndex={0}
                       href={s.facebook}
                       target="blank"
                       className={styles.socialLink}
                     >
-                      <SvgFb className={styles.socialIco} />
+                      <SvgFb className={styles.socialIco} tabIndex={-1} />
                     </a>
 
                     <a
+                      tabIndex={0}
                       href={s.twitter}
                       target="blank"
                       className={styles.socialLink}
                     >
-                      <SvgTw className={styles.socialIco} />
+                      <SvgTw className={styles.socialIco} tabIndex={-1} />
                     </a>
 
                     <a
+                      tabIndex={0}
                       href={s.youtube}
                       target="blank"
                       className={styles.socialLink}
                     >
-                      <SvgYt className={styles.socialIco} />
+                      <SvgYt className={styles.socialIco} tabIndex={-1} />
                     </a>
 
                     <a
+                      tabIndex={0}
                       href={s.linkedin}
                       target="blank"
                       className={styles.socialLink}
                     >
-                      <SvgIn className={styles.socialIco} />
+                      <SvgIn className={styles.socialIco} tabIndex={-1} />
                     </a>
                   </div>
                 ))}

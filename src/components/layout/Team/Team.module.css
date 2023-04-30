@@ -45,7 +45,8 @@
   justify-content: center;
 }
 
-.itemHover:hover {
+.itemHover:hover,
+.itemHover:focus {
   opacity: 0.8;
 }
 
@@ -63,11 +64,13 @@
   opacity: 1;
 }
 
-.itemHover .socialLink:hover {
+.itemHover .socialLink:hover,
+.itemHover .socialLink:focus {
   opacity: 0.8;
 }
 
-.itemHover:hover + .itemImg img {
+.itemHover:hover + .itemImg img,
+.itemHover:focus + .itemImg img {
   filter: brightness(60%);
   transform: scale(1.05);
   transition: all 0.3s;
@@ -88,3 +91,4 @@
   transform: scale(1.05);
   z-index: 2;
 }
+
