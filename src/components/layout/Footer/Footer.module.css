@@ -5,6 +5,7 @@
   background-color: var(--black);
   align-items: center;
   gap: 12px;
+  margin-top: auto;
 }
 
 .socials {

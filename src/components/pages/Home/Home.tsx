@@ -6,10 +6,11 @@ import { Blog } from "../../layout/Blog";
 import { Team } from "../../layout/Team";
 import { Contact } from "../../layout/Contact";
 import { Footer } from "../../layout/Footer";
+import styles from "./Home.module.css";
 
 const Home = (): JSX.Element => {
   return (
-    <>
+    <div className={styles.container}>
       <Menu />
       <main>
         <Hero />
@@ -20,7 +21,7 @@ const Home = (): JSX.Element => {
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

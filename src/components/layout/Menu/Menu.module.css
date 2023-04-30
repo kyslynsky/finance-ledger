@@ -8,6 +8,7 @@
   align-content: center;
   gap: 16px;
   padding: 22px;
+  margin-top: auto;
 }
 
 .headerLogo {
@@ -32,6 +33,6 @@
 
 .fixed {
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.8);
 }

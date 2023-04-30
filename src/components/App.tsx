@@ -7,7 +7,7 @@ const Home = lazy(() => import("./pages/Home/Home"));
 function App(): JSX.Element {
   return (
     <>
-      <Home />;
+      <Home />
       <ToastContainer transition={Zoom} />
     </>
   );
