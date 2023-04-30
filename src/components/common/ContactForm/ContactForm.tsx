@@ -52,6 +52,8 @@ export const ContactForm = ({
       .catch(error => alert(error));
   };
 
+  const emailRegex = /^[\w-\\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+
   return (
     <form
       name="contact"
@@ -76,7 +78,13 @@ export const ContactForm = ({
         })}
         type="email"
         placeholder="Enter email*"
-        {...register("email", { required: "Email is required" })}
+        {...register("email", {
+          required: "Email is required",
+          pattern: {
+            value: emailRegex,
+            message: "Email is required",
+          },
+        })}
       />
 
       <ErrorMessage
