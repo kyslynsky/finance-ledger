@@ -51,3 +51,15 @@ textarea {
 button {
   cursor: pointer;
 }
+
+@media screen and (min-width: 768px) {
+  .gGBwSS {
+    width: 80% !important;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .gGBwSS {
+    width: 60% !important;
+  }
+}

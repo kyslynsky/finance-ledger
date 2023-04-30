@@ -5,12 +5,21 @@ import { navItems } from "../../../helpers/navItems";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Navigation = ({
+  matches,
   className,
   ...props
 }: NavigationProps): JSX.Element => {
   const scrollTop = () => {
     scroll.scrollToTop();
   };
+
+  let offSet = 0;
+
+  if (!matches) {
+    offSet = -120;
+  } else {
+    offSet = -90;
+  }
 
   return (
     <nav className={cn(className, styles.nav)} {...props}>
@@ -22,7 +31,7 @@ export const Navigation = ({
         </li>
         {navItems.map(i => (
           <li key={i.id} className={styles.navItem}>
-            <Link to={i.route} spy={true} smooth={true} offset={-120}>
+            <Link to={i.route} spy={true} smooth={true} offset={offSet}>
               {i.name}
             </Link>
           </li>
@@ -31,3 +40,4 @@ export const Navigation = ({
     </nav>
   );
 };
+

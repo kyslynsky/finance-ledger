@@ -31,3 +31,19 @@
 .text {
   margin: 24px 0;
 }
+
+@media screen and (min-width: 768px) {
+  .aboutSection {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .aboutDesc {
+    padding: 62px 32px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .aboutDesc {
+    padding: 80px 20px;
+  }
+}

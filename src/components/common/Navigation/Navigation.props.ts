@@ -1,4 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export interface NavigationProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {}
+  extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
+  matches: boolean;
+}

@@ -15,6 +15,7 @@
   display: grid;
   grid-template-columns: 40px 1fr 1fr;
   gap: 8px;
+  align-items: center;
   font-size: 28px;
   line-height: 38px;
   transition: transform 750ms;
@@ -35,4 +36,16 @@
   position: fixed;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .headerLogo {
+    font-size: 35px;
+    line-height: 48px;
+  }
 }
