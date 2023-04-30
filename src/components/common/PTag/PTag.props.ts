@@ -6,6 +6,6 @@ export interface PTagProps
     HTMLParagraphElement
   > {
   size?: "s" | "m";
-  color?: "black";
+  color?: "black" | "red";
   children: ReactNode;
 }

@@ -15,6 +15,7 @@ export const PTag = ({
         [styles.s]: size === "s",
         [styles.m]: size === "m",
         [styles.black]: color === "black",
+        [styles.red]: color === "red",
       })}
       {...props}
     >

@@ -5,6 +5,7 @@ import { Cases } from "../../layout/Cases";
 import { Blog } from "../../layout/Blog";
 import { Team } from "../../layout/Team";
 import { Contact } from "../../layout/Contact";
+import { Footer } from "../../layout/Footer";
 
 const Home = (): JSX.Element => {
   return (
@@ -18,6 +19,7 @@ const Home = (): JSX.Element => {
         <Team />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 };
