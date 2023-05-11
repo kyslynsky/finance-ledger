@@ -18,14 +18,15 @@
   align-items: center;
   font-size: 28px;
   line-height: 38px;
-  transition: transform 750ms;
-  will-change: transform;
+  transition: transform 750ms, filter 750ms;
+  will-change: transform, filter;
   cursor: pointer;
 }
 
 .headerLogo:hover,
 .headerLogo:focus {
   transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
 .headerLogo span {

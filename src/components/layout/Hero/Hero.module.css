@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100%;
   padding: 200px 0;
   background-image: var(--linear-grad), url(./images/showcase.webp);
