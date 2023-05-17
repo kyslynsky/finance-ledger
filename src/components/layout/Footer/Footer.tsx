@@ -14,32 +14,40 @@ export const Footer = ({ className, ...props }: FooterProps): JSX.Element => {
       <div className={styles.socials}>
         <a
           href="https://facebook.com"
-          target="blank"
+          target="_blank"
+          rel="noopener noreferrer"
           tabIndex={0}
+          aria-label="Facebook"
           className={styles.socialLink}
         >
           <SvgFb width={35} height={35} className={styles.socialIcon} />
         </a>
         <a
           href="https://twitter.com"
-          target="blank"
+          target="_blank"
+          rel="noopener noreferrer"
           tabIndex={0}
+          aria-label="Twitter"
           className={styles.socialLink}
         >
           <SvgTw width={35} height={35} className={styles.socialIcon} />
         </a>
         <a
           href="https://youtube.com"
-          target="blank"
+          target="_blank"
+          rel="noopener noreferrer"
           tabIndex={0}
+          aria-label="YouTube"
           className={styles.socialLink}
         >
           <SvgYt width={35} height={35} className={styles.socialIcon} />
         </a>
         <a
           href="https://linkedin.com"
-          target="blank"
+          target="_blank"
+          rel="noopener noreferrer"
           tabIndex={0}
+          aria-label="LinkedIn"
           className={styles.socialLink}
         >
           <SvgIn width={35} height={35} className={styles.socialIcon} />
