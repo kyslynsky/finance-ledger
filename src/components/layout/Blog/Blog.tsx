@@ -17,7 +17,9 @@ export const Blog = (): JSX.Element => {
           illum dolore explicabo ab dolores itaque rerum temporibus doloribus
           iste maiores deleniti?
         </PTag>
-        <Button appearence="blue">Read Our Blog</Button>
+        <Button type="button" appearence="blue" aria-label="Read More">
+          Read Our Blog
+        </Button>
       </div>
     </Section>
   );

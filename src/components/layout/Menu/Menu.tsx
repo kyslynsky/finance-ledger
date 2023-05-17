@@ -3,8 +3,7 @@ import { MenuProps } from "./Menu.props";
 import styles from "./Menu.module.css";
 import Logo from "../../iconComponents/Logo";
 import { Navigation } from "../../common/Navigation";
-import { useState, useEffect } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { useState, useEffect, KeyboardEvent } from "react";
 
 export const Menu = ({ className, ...props }: MenuProps): JSX.Element => {
   const [matches, setMatches] = useState<boolean>(
@@ -31,7 +30,18 @@ export const Menu = ({ className, ...props }: MenuProps): JSX.Element => {
   }, [matches]);
 
   const scrollTop = () => {
-    scroll.scrollToTop();
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleKeyDown = (e: KeyboardEvent) => {
+    if (e.code === "Enter") {
+      e.preventDefault();
+      scrollTop();
+    }
   };
 
   return (
@@ -41,17 +51,23 @@ export const Menu = ({ className, ...props }: MenuProps): JSX.Element => {
       })}
       {...props}
     >
-      <Link
-        to={"/"}
-        onClick={() => {
-          scrollTop();
+      <a
+        aria-label="Home Top"
+        onClick={() => scrollTop()}
+        onKeyDown={(e: KeyboardEvent) => {
+          handleKeyDown(e);
         }}
         className={styles.headerLogo}
+        tabIndex={1}
       >
         <Logo width={40} height={35} />
         <span>Finance</span>Ledger
-      </Link>
-      <Navigation matches={matches} />
+      </a>
+      <Navigation
+        matches={matches}
+        scroller={scrollTop}
+        handleHomeClick={handleKeyDown}
+      />
     </header>
   );
 };

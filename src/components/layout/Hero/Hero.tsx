@@ -8,7 +8,12 @@ export const Hero = (): JSX.Element => {
     <Section className={styles.heroSection}>
       <HTag tag="h1">The Sky Is The Limit</HTag>
       <HTag tag="h3">We provide world class financial assistance</HTag>
-      <Button appearence="primary" arrow="rigth">
+      <Button
+        type="button"
+        appearence="primary"
+        arrow="rigth"
+        aria-label="Read More"
+      >
         Read More
       </Button>
     </Section>

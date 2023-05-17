@@ -22,17 +22,23 @@ export const Team = (): JSX.Element => {
       </div>
       <ul className={styles.teamGallery}>
         {teamData.map(item => (
-          <li key={item.id} tabIndex={0} className={styles.item}>
-            <div className={styles.itemImg} tabIndex={0}>
+          <li key={item.id} className={styles.item}>
+            <div className={styles.itemImg}>
               {picturesFactory(item.images)}
 
-              <div className={styles.itemHover} tabIndex={0}>
+              <div
+                className={styles.itemHover}
+                tabIndex={0}
+                aria-label={item.fullname}
+              >
                 {item.socials.map((s, i) => (
                   <div className={styles.socialIcons} key={i} tabIndex={-1}>
                     <a
                       tabIndex={0}
                       href={s.facebook}
-                      target="blank"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
                       className={styles.socialLink}
                     >
                       <SvgFb className={styles.socialIco} tabIndex={-1} />
@@ -41,7 +47,9 @@ export const Team = (): JSX.Element => {
                     <a
                       tabIndex={0}
                       href={s.twitter}
-                      target="blank"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
                       className={styles.socialLink}
                     >
                       <SvgTw className={styles.socialIco} tabIndex={-1} />
@@ -50,7 +58,9 @@ export const Team = (): JSX.Element => {
                     <a
                       tabIndex={0}
                       href={s.youtube}
-                      target="blank"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="YouTube"
                       className={styles.socialLink}
                     >
                       <SvgYt className={styles.socialIco} tabIndex={-1} />
@@ -59,7 +69,9 @@ export const Team = (): JSX.Element => {
                     <a
                       tabIndex={0}
                       href={s.linkedin}
-                      target="blank"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
                       className={styles.socialLink}
                     >
                       <SvgIn className={styles.socialIco} tabIndex={-1} />

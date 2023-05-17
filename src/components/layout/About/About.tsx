@@ -17,7 +17,9 @@ export const About = (): JSX.Element => {
           illum dolore explicabo ab dolores itaque rerum temporibus doloribus
           iste maiores deleniti?
         </PTag>
-        <Button appearence="green">Read More</Button>
+        <Button type="button" appearence="green" aria-label="Read More">
+          Read More
+        </Button>
       </div>
     </Section>
   );

@@ -29,6 +29,7 @@ export const ContactForm = ({
     formState: { errors },
     reset,
     watch,
+    clearErrors,
   } = useForm<IFormData>();
 
   const onSubmit = (data: IFormData) => {
@@ -45,9 +46,9 @@ export const ContactForm = ({
             position: "bottom-center",
             autoClose: false,
             hideProgressBar: true,
+            role: "alert",
           }
         );
-        console.log(data);
       })
       .catch(error => alert(error));
   };
@@ -69,6 +70,7 @@ export const ContactForm = ({
         type="text"
         placeholder="Enter your name"
         autoComplete="true"
+        aria-label="Name"
         {...register("name")}
       />
 
@@ -78,6 +80,9 @@ export const ContactForm = ({
         })}
         type="email"
         placeholder="Enter email*"
+        aria-label="Email"
+        aria-invalid={errors.email ? "true" : "false"}
+        role="alert"
         {...register("email", {
           required: "Email is required",
           pattern: {
@@ -97,7 +102,13 @@ export const ContactForm = ({
           </PTag>
         )}
       />
-      <Button type="submit" appearence="primary" className={styles.submitBtn}>
+      <Button
+        onClick={() => clearErrors()}
+        type="submit"
+        aria-label="Send"
+        appearence="primary"
+        className={styles.submitBtn}
+      >
         Send
       </Button>
     </form>

@@ -45,6 +45,7 @@ export const Cases = (): JSX.Element => {
             onKeyDown={e => {
               if (e.code === "Enter") {
                 setIsOpen(true);
+                setCurrentIndex(i);
               }
             }}
           >
@@ -86,4 +87,3 @@ export const Cases = (): JSX.Element => {
     </Section>
   );
 };
-
