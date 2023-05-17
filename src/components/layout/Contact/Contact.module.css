@@ -47,3 +47,9 @@
     padding: 56px 28px 77px 20px;
   }
 }
+
+@media screen and (min-width: 1824px) {
+  .wrapper {
+    padding: 7.5vw 2vw 9vw 20px;
+  }
+}

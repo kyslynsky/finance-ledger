@@ -57,3 +57,9 @@
     padding: 80px 28px;
   }
 }
+
+@media screen and (min-width: 1824px) {
+  .blogDesc {
+    padding: 10vw 20px;
+  }
+}

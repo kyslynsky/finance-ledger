@@ -1,7 +1,6 @@
 .aboutSection {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: var(--green);
 }
 
 .aboutBg {
@@ -22,6 +21,7 @@
 
 .aboutDesc {
   padding: 79px 20px;
+  background-color: var(--green);
 }
 
 .aboutDesc h2 {
@@ -45,5 +45,11 @@
 @media screen and (min-width: 1360px) {
   .aboutDesc {
     padding: 80px 20px;
+  }
+}
+
+@media screen and (min-width: 1824px) {
+  .aboutDesc {
+    padding: 10vw 20px;
   }
 }
